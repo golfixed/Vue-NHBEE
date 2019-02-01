@@ -10,8 +10,12 @@
           <div class="container">
             <div class="container">
               <div class="row">
-                <div class="col-md-6 address-fix d-flex align-items-center">
-                  <div class="d-flex flex-column">
+                <div class="col-md-6 address-fix d-flex align-items-center row" style=" padding-right: 0px; padding-left: 0px;">
+                  <div class="col-md-4 d-flex flex-row justify-content-center" style=" padding: 20px 0px 40px 0px;">
+                    <img class="footer-logo" src="/static/img/logo.png" />
+                    <img class="footer-logo" src="/static/img/logo-kmutt.png" />
+                  </div>
+                  <div class="col-md-8 d-flex flex-column">
                     <h5 style="font-weight: bold;">NHBEE KMUTT</h5>
                     <h6 style="font-weight: bold;">Native Honeybee Research Laboratory</h6>
                     <h6>{{ $t("message.footer.address.name") }}</h6>
@@ -116,9 +120,12 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Kanit|Sarabun|Chakra+Petch');
-@import 'bootstrap/dist/css/bootstrap.css';
-@import 'bootstrap-vue/dist/bootstrap-vue.css';
-
+@import 'assets/bootstrap/css/bootstrap.css';
+.footer-logo{
+  margin: 0px 20px 0px 0px;
+  width: 70px;
+  height: 70px;
+}
 .topsearch{
   border: solid;
   color: #6BA329;

@@ -22,9 +22,13 @@ export default {
         subtitle: 'Explore our published papers'
       },
       contact: {
-        title: 'Contact',
+        title: 'Contact Us',
         subtitle: 'Feel free to contact us'
       },
+      admin: {
+        title: 'Log in',
+        subtitle: 'to Administrator'
+      }
     },
     navbar: {
       col1: 'Home',
@@ -98,7 +102,7 @@ export default {
       }
     },
     page2_about:{
-      title: 'About Us',
+      title: 'ABOUT US',
       paragraph1title: 'Native Honeybee Research Laboratory',
       paragraph1: ' Deep tech researches of honeybees for multidisciplinary approach to create an invigorative economy and support resilient communities. Led by Assistant Professor Dr.Orawan Duangphakdee, NHBEE consists of 8 researchers (equivalent 2 FTEs), 1 BSc research assistant and 1 beekeeping technician. Our group, gathering from different disciplines e.g. Biology, Agricultural Technology, Biochemistry, Mathematic Modeling, Control System and Instrumental Engineering and Analytical Chemistry, works together as a team to achieve goals of NHBEE.',
       paragraph2: '	Since its establishment in 2008, bee research group at King Mongkut\'s University of Technology Thonburi (KMUTT), Ratchaburi Campus has continually enjoyed many visits and research collaborations from several foreign honeybee scientists. We have performed research activities and internationalized our bee research group in terms of actual collaborations and networking at all levels. These collaborations consist of famous senior scientists, up to 10 young Asian research scientists including Thailand and 10 others from other foreign countries e.g. Germany, U.S.A and South Africa mentoring by more than 10 honeybee senior scientists from all over the world.',
@@ -111,8 +115,27 @@ export default {
       paragraph4_item3: 'Smart bee farming',
     },
     page6_contact: {
-      title: 'Contact Us',
-      subtitle: 'Don\'t hesitate to contact us',
+      title: 'CONTACT US',
+      subtitle: ' n\'t hesitate to contact us',
+      address: {
+        title: 'Address',
+        detail: {
+          line1: 'Native Honeybee Research Laboratory',
+          line2: 'King Mongkut\'s University of Technology Thonburi',
+          line3: 'Rangbau Chombueng 70150'
+        }
+      },
+      contact: {
+        title: 'Contact',
+        detail: {
+          line1: 'name.sample@mail.kmutt.ac.th',
+          line2: '(038) 123-456 or 081-234-5678',
+          line3: ''
+        }
+      },
+      maps: {
+        title: 'Maps'
+      }
     }
   }
 }

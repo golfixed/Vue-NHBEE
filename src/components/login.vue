@@ -4,8 +4,8 @@
     <div class="container" style="margin-top: -280px;">
       <div class="container page-title d-flex align-items-center">
         <div class="row flex-column page-title-padding-fix">
-          <h3 class="page-title-yellbold">{{ $t("message.pageheader.contact.title") }}</h3>
-          <h3 class="page-subtitle">{{ $t("message.pageheader.contact.subtitle") }}</h3>
+          <h3 class="page-title-yellbold">{{ $t("message.pageheader.admin.title") }}</h3>
+          <h3 class="page-subtitle">{{ $t("message.pageheader.admin.subtitle") }}</h3>
         </div>
       </div>
       <div class="page-body" style="overflow: hidden;">
@@ -55,28 +55,14 @@
       </div>
     </div>
 </template>
+
 <script>
-import {
-  mdbIcon
-} from 'mdbvue'
-export default {
-  name: 'aboutus',
-  components: {
-    mdbIcon
-  }
+export default { 
+    name: 'login'
 }
 </script>
-<style scpoed>
-.mapdiv{
-  overflow: hidden; 
-  border-radius: 5px; 
-  background-color: rgb(237,237, 237);
-}
-.about-pic{
-  margin: 0px 0px 10px 0px;
-  width: 100%;
-  border-radius: 5px;
-}
+
+<style>
 .topic{
   margin: 30px 0px 10px 0px;
   padding-left: 10px;
@@ -116,20 +102,4 @@ export default {
   background-size: cover;
   background-position: center;
 }
-
-/* .App__example-single-element {
-  height: 20em;
-  background-color: lightblue;
-}
-
-.App__example-double-element {
-  display: flex;
-  height: 20em;
-  background-color: lightgreen;
-}
-
-.App__example-element {
-  padding: 1em;
-  max-width: 12em;
-} */
 </style>
