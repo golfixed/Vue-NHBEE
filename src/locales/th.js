@@ -104,7 +104,23 @@ export default {
     },
     page6_contact: {
       title: 'ติดต่อเรา',
-      subtitle: 'อย่าลังเลที่จะติดต่อเรา'
+      subtitle: 'อย่าลังเลที่จะติดต่อเรา',
+      address: {
+        title: 'ที่อยู่',
+        detail: {
+          line1: 'ศูนย์วิจัย Native Honeybee',
+          line2: 'มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี',
+          line3: 'ตำบลรางบัว อำเภอจอมบึง จังหวัดราชบุรี 70150'
+        }
+      },
+      contact: {
+        title: 'ติดต่อ',
+        detail: {
+          line1: 'name.sample@mail.kmutt.ac.th',
+          line2: '(038) 123-456 หรือ 081-234-5678',
+          line3: ''
+        }
+      }
     }
   }
 }

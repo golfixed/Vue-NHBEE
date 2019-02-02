@@ -10,7 +10,7 @@
           <div class="container">
             <div class="container">
               <div class="row">
-                <div class="col-md-6 address-fix d-flex align-items-center row" style=" padding-right: 0px; padding-left: 0px;">
+                <div class="col-md-7 address-fix d-flex align-items-center row" style=" padding-right: 0px; padding-left: 0px;">
                   <div class="col-md-4 d-flex flex-row justify-content-center" style=" padding: 20px 0px 40px 0px;">
                     <img class="footer-logo" src="/static/img/logo.png" />
                     <img class="footer-logo" src="/static/img/logo-kmutt.png" />
@@ -22,7 +22,7 @@
                     <h6>{{ $t("message.footer.address.add") }}</h6>
                   </div>
                 </div>
-                <div class="col-md-6 left-hr quicklink-fix">
+                <div class="col-md-5 left-hr quicklink-fix">
                   <div class="row">
                     <div class="col-4 more-left-space">
                       <h6>{{ $t("message.footer.link.col1.colname") }}</h6>
