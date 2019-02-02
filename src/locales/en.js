@@ -132,9 +132,6 @@ export default {
           line2: '(038) 123-456 or 081-234-5678',
           line3: ''
         }
-      },
-      maps: {
-        title: 'Maps'
       }
     }
   }
