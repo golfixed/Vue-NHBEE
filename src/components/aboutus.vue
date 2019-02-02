@@ -22,7 +22,7 @@
               </div>
               <div class="col-md-4 d-flex align-items-center justify-content-center">
                 <img class="p-2" src="/static/img/logo.png" style="width: 40%;"/>
-                <img class="p-2" src="/static/img/KMUTT-LOGO.png"  style="width: 40%;"/>
+                <img class="p-2" src="/static/img/logo-kmutt.png"  style="width: 40%;"/>
               </div>
             </div>
             <div class="row" style="padding: 20px ;">
