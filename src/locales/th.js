@@ -32,7 +32,8 @@ export default {
       col3: 'ข่าวใหม่',
       col4: 'ทำแบบสอบถาม',
       col5: 'งานวิจัย',
-      col6: 'ติดต่อเรา'
+      col6: 'ติดต่อเรา',
+      col7: 'ผู้ดูแลระบบ'
     },
     searchbar: 'ค้นหาในเว็บ',
     quicklink: {
@@ -119,6 +120,15 @@ export default {
           line1: 'name.sample@mail.kmutt.ac.th',
           line2: '(038) 123-456 หรือ 081-234-5678',
           line3: ''
+        }
+      },
+      login: {
+        title: 'เข้าสู่ผู้ดูแลระบบ',
+        username: 'บัญชี',
+        password: 'รหัสผ่าน',
+        btn: {
+          back: 'ย้อนกลับ',
+          enter: 'ลงชื่อเข้าใช้'
         }
       }
     }

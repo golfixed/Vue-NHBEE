@@ -36,7 +36,8 @@ export default {
       col3: 'News',
       col4: 'Take a survey',
       col5: 'Research',
-      col6: 'Contact us'
+      col6: 'Contact us',
+      col7: 'Admin LogIn'
     },
     searchbar: 'Search in web',
     quicklink: {
@@ -131,6 +132,15 @@ export default {
           line1: 'name.sample@mail.kmutt.ac.th',
           line2: '(038) 123-456 or 081-234-5678',
           line3: ''
+        }
+      },
+      login: {
+        title: 'Log In to Admin Mode',
+        username: 'Username',
+        password: 'Password',
+        btn: {
+          back: 'Back',
+          enter: 'Log In'
         }
       }
     }

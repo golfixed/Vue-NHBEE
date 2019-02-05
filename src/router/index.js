@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import home from '@/components/home'
-import aboutus from '@/components/aboutus'
-import contact from '@/components/contact'
-import login from '@/components/login'
+import home from '@/views/home'
+import aboutus from '@/views/aboutus'
+import contact from '@/views/contact'
+import login from '@/views/login'
+import upcoming from '@/views/upcoming'
 
 Vue.use(Router)
 
@@ -11,6 +12,11 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'upcoming',
+      component: upcoming
+    },
+    {
+      path: '/home',
       name: 'Home',
       component: home
     },
@@ -25,8 +31,8 @@ export default new Router({
       component: contact
     },
     {
-      path: '/admin',
-      name: 'Admin',
+      path: '/login',
+      name: 'Log In',
       component: login
     }
   ],

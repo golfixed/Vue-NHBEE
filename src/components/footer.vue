@@ -47,20 +47,14 @@
                 </div>
               </div>
               <div class="row top-hr" style="padding: 20px 0px 20px 0px;">
-                <div class="col-md-6 d-flex justify-content-center">
-                  <font-awesome-icon
-                    icon="envelope"
-                    style="color: #707070; margin: 10px 0px 10px 0px !important;"
-                  />
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                  <mdb-icon icon="envelope-open" style="margin-right: 10px; color: #5D5D5D !important; font-size: 14px !important;" />
                   <h6
                     style=" text-align: center; color: #5D5D5D !important; font-size: 14px !important; padding: 10px 0px 10px 10px !important; margin: 0px 0px 0px 0px !important;"
                   >{{ $t("message.footer.contact.email") }}</h6>
                 </div>
-                <div class="col-md-6 d-flex justify-content-center">
-                  <font-awesome-icon
-                    icon="phone"
-                    style="color: #707070; margin: 10px 0px 10px 0px !important;"
-                  />
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                  <mdb-icon icon="phone" style="margin-right: 10px; color: #5D5D5D !important; font-size: 14px !important;"/>
                   <h6
                     style="text-align: center; color: #5D5D5D !important; font-size: 14px !important; padding: 10px 0px 10px 10px !important; margin: 0px 0px 0px 0px !important;"
                   >{{ $t("message.footer.contact.phone") }}</h6>
@@ -78,14 +72,10 @@
                 >Copyright © Native Honeybee Laboratory at KMUTT. All rights reserved.</p>
               </div>
               <div class="col-6 d-flex justify-content-end">
-                <font-awesome-icon
-                  icon="globe"
-                  style="color: white; margin: 10px 0px 10px 0px !important;"
-                />
                 <p
                   style="color: white !important; font-size: 12px; padding: 10px 0px 10px 10px !important; margin: 0px 0px 0px 0px !important;"
                 >
-                  <a href class="lng-btn">NNHBEE KMUTT 2019</a>
+                  <a href class="lng-btn">NHBEE KMUTT 2019</a>
                 </p>
               </div>
             </div>
@@ -95,10 +85,22 @@
 </template>
 
 <script>
+import {
+  mdbIcon 
+  }
+  from 'mdbvue'
 export default {
-  name: 'footer'
+  name: 'footerall',
+  components: {
+    mdbIcon
+  }
 }
 </script>
 
 <style>
+.footer-logo{
+  margin: 0px 20px 0px 0px;
+  width: 70px;
+  height: 70px;
+}
 </style>

@@ -38,7 +38,7 @@
           <nav :class="[{'show': hamburger}, 'nav-display']">
             <ul id="navbar-nav">
               <li class="active">
-                <router-link to="/">{{ $t("message.navbar.col1") }}</router-link>
+                <router-link to="/home">{{ $t("message.navbar.col1") }}</router-link>
               </li>
               <li>
                 <router-link to="/about">{{ $t("message.navbar.col2") }}</router-link>
@@ -55,6 +55,10 @@
               <li>
                 <router-link to="/contact">{{ $t("message.navbar.col6") }}</router-link>
               </li>
+              <li>
+                <router-link to="/login">{{ $t("message.navbar.col7") }}</router-link>
+              </li>
+              
             </ul>
           </nav>
         </div>
