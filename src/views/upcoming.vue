@@ -1,5 +1,5 @@
 <template>
-  <div class="login-header-bg d-flex align-items-center">
+  <div class="future-header-bg d-flex align-items-center">
     <div class="container d-flex justify-content-center align-items-center">
 
       <div class="page-body" style="overflow: hidden; padding: 25px 10px 25px 10px;">
@@ -12,12 +12,11 @@
               </div>
 
               <label for="defaultFormLoginPasswordEx" class="grey-text">Future Access Key</label>
-              <input type="password" class="form-control"/>
+              <input v-model="password" placeholder="Enter" type="password" class="form-control"/>
               <div class="text-center mt-4">
-                  <router-link to="/home">
-                    <button class="btn btn-indigo" type="submit"><mdb-icon icon="sign-in-alt" style="margin-right: 10px;" />Login</button>
-                  </router-link>
+                    <button @click="login" class="btn btn-indigo" ><mdb-icon icon="sign-in-alt" style="margin-right: 10px;" />Login</button>
               </div>
+              
             </form>
           </div>
       </div>
@@ -33,12 +32,25 @@ import {
   mdbIcon
 } from 'mdbvue'
 export default { 
-    name: 'login',
-    created() {
+  name: 'login',
+  created() {
     this.$emit(`update:layout`, layout_login);
   },
   components: {
     mdbIcon
+  },
+  data() {
+    return {
+      password: ''
+    }
+  },
+  methods: {
+    login () {
+      if (this.password == '1234')
+        this.$router.push("/home")
+      else
+        return 
+    }
   }
 }
 </script>
@@ -62,7 +74,7 @@ export default {
   border: solid;
   border-width: 0px 0px 0px 3px;
 }
-.login-header-bg {
+.future-header-bg {
   padding: 0px;
   background-image: url("/static/img/upcome/bg.jpg");
   background-position: center center;
