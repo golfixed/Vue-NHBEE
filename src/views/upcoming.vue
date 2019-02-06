@@ -41,15 +41,16 @@ export default {
   },
   data() {
     return {
-      password: ''
+      password: '',
+      wrongpw: 'WRONG PASSWORD'
     }
   },
   methods: {
     login () {
-      if (this.password == '1234')
+      if (this.password == 'nhbee2019')
         this.$router.push("/home")
       else
-        return 
+        return wrongpw
     }
   }
 }
