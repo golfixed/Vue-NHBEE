@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="about-header-bg"/>
-    <div class="container" style="margin-top: -280px;">
+    <div class="container top-fix">
       <div class="container page-title d-flex align-items-center">
         <div class="row flex-column page-title-padding-fix">
           <h3 class="page-title-yellbold">{{ $t("message.pageheader.about.title") }}</h3>
@@ -109,7 +109,9 @@ export default {
   background-size: cover;
   background-position: center;
 }
-
+.top-fix {
+    margin-top: -310px;
+}
 /* .App__example-single-element {
   height: 20em;
   background-color: lightblue;

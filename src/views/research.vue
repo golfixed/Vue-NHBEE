@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="research-header-bg"/>
-    <div class="container" style="margin-top: -280px;">
+    <div class="container top-fix">
       <div class="container page-title d-flex align-items-center">
         <div class="row flex-column page-title-padding-fix">
           <h3 class="page-title-yellbold">{{ $t("message.pageheader.research.title") }}</h3>
@@ -25,7 +25,7 @@
                   </div>
                 </div>
                 <mdb-list-group style="margin-bottom: 20px;">
-                    <mdb-list-group-item :action="true" href="#">งานวิจัยเกี่ยวกับระบบสืบพันธ์ของผึ้ง <button class="open">OPEN</button>
+                    <mdb-list-group-item :action="true" href="#">งานวิจัยเกี่ยวกับระบบสืบพันธ์ของผึ้ง <a href="/static/file/research/nhbee.pdf" target="_blank"><button class="open">OPEN</button></a>
                     </mdb-list-group-item>
                     <mdb-list-group-item :action="true" href="#">วิจัยอาณาจักรของผึ้ง <button class="open">OPEN</button>
                     </mdb-list-group-item>
@@ -131,6 +131,9 @@ export default {
 }
 </script>
 <style scpoed>
+.top-fix {
+    margin-top: -310px;
+}
 .pagination.pg-blue .page-item.active .page-link {
     background-color: #e1b534;
     border-radius: 50%;

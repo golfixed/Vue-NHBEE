@@ -18,8 +18,8 @@
               <label for="defaultFormLoginPasswordEx" class="grey-text">Password</label>
               <input type="password" id="defaultFormLoginPasswordEx" class="form-control"/>
               <div class="text-center mt-4">
-                <router-link to="/home"><button class="btn btn-back" type="submit"><mdb-icon icon="angle-left" style="margin-right: 10px;" />Back</button></router-link>
-                <button class="btn btn-indigo" type="submit"><mdb-icon icon="sign-in-alt" style="margin-right: 10px;" />Login</button>
+                <router-link to="/home"><button class="btn-back" type="submit"><mdb-icon icon="angle-left" style="margin-right: 10px;" />Back</button></router-link>
+                <button class="btn-enter" type="submit"><mdb-icon icon="sign-in-alt" style="margin-right: 10px;" />Login</button>
               </div>
             </form>
           </div>
@@ -50,11 +50,42 @@ export default {
 .btn-back{
   background-color: #333b41;
   color: #fff !important;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 0.84rem 2.14rem;
+    font-size: 0.81rem;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    margin: 0.375rem;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: normal;
+    word-wrap: break-word;
 }
-.btn-indigo {
-  background-color: #0ca514 !important;
+.btn-enter {
+  background-color: #0ca514;
   color: #fff !important;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 0.84rem 2.14rem;
+    font-size: 0.81rem;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    margin: 0.375rem;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: normal;
+    word-wrap: break-word;
 }
+
 .topic{
   margin: 30px 0px 10px 0px;
   padding-left: 10px;

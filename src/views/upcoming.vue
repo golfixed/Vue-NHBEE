@@ -14,7 +14,7 @@
               <label for="defaultFormLoginPasswordEx" class="grey-text">Future Access Key</label>
               <input v-model="password" placeholder="Enter" type="password" class="form-control"/>
               <div class="text-center mt-4">
-                    <button @click="login" class="btn btn-indigo" ><mdb-icon icon="sign-in-alt" style="margin-right: 10px;" />Login</button>
+                    <button @click="login" class="btn-enter" ><mdb-icon icon="sign-in-alt" style="margin-right: 10px;" />Login</button>
               </div>
               
             </form>
@@ -57,13 +57,24 @@ export default {
 </script>
 
 <style>
-.btn-back{
-  background-color: #333b41;
+.btn-enter {
+  background-color: #0ca514;
   color: #fff !important;
-}
-.btn-indigo {
-  background-color: #0ca514 !important;
-  color: #fff !important;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 0.84rem 2.14rem;
+    font-size: 0.81rem;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    margin: 0.375rem;
+    border: 0;
+    border-radius: 10000px;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: normal;
+    word-wrap: break-word;
 }
 .topic{
   margin: 30px 0px 10px 0px;
