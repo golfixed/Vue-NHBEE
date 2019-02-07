@@ -143,6 +143,15 @@ export default {
           enter: 'Log In'
         }
       }
+    },
+    page5_research: {
+      title: 'RESEARCH',
+      username: 'Username',
+      password: 'Password',
+      btn: {
+        back: 'Back',
+        enter: 'Log In'
+      }
     }
   }
 }
