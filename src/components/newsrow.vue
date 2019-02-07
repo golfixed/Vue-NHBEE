@@ -3,8 +3,11 @@
     <div class="col-md-9">
       <div class="title">{{title}}</div>
       <div class="des">{{description}}</div>
-      <golfbtn text="btntxt" />
-      <div class="golfbtn">Read More</div>
+      <div class="row d-flex justify-content-start" style="margin-left: 10px;">
+        <golfbtn text="Read More" />
+        <sharebtn />
+
+      </div>
     </div>
     <div class="col-md-3">
       <img
@@ -16,12 +19,14 @@
 </template>
 
 <script>
-import golfbtn from '@/components/golfbotton'
+import golfbtn from '@/components/button/golfbotton'
+import sharebtn from '@/components/button/sharebtn'
 export default {
   name: 'newsrow',
   props: ['title', 'description', 'img'],
   components: {
-    golfbtn
+    golfbtn,
+    sharebtn
   }
 }
 </script>
@@ -33,7 +38,7 @@ export default {
     -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     padding: 0.84rem 2.14rem;
-    font-size: 0.81rem;
+    font-size: 1rem;
     -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
