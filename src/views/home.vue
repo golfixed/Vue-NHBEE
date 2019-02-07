@@ -1,7 +1,7 @@
 <template>
 <div>
     <div class="home-header-bg"/>
-    <div class="container" style="margin-top: -280px;">
+    <div class="container" style="margin-top: -310px;">
       <div class="container page-title d-flex align-items-center">
         <div class="row flex-column page-title-padding-fix">
           <h3 class="page-title-yellbold">{{ $t("message.pageheader.home.title") }}</h3>
@@ -20,7 +20,7 @@
     <div class="container">
       <div class="row ql-div">
         <div class="col-md-6 quicklink-div">
-          <div class="container card">
+          <div class="container card" style="padding-left: 0px;padding-right: 0px;">
             <block
               link="/research"
               img="/static/img/home/ql/lab.jpg"
@@ -30,7 +30,7 @@
           </div>
         </div>
         <div class="col-md-6 quicklink-div">
-          <div class="container card">
+          <div class="container card" style="padding-left: 0px;padding-right: 0px;">
             <block
               link="/about"
               img="/static/img/home/ql/team.jpg"
@@ -42,7 +42,7 @@
       </div>
       <div class="row ql-div">
         <div class="col-md-6 quicklink-div">
-          <div class="container card">
+          <div class="container card" style="padding-left: 0px;padding-right: 0px;">
             <block
               link="/about"
               img="/static/img/home/ql/aboutus.jpg"
@@ -52,7 +52,7 @@
           </div>
         </div>
         <div class="col-md-6 quicklink-div">
-          <div class="container card">
+          <div class="container card" style="padding-left: 0px;padding-right: 0px;">
             <block
               link="/research"
               img="/static/img/home/ql/contact.jpg"
@@ -69,7 +69,7 @@
           <h3 class="section-title">{{ $t("message.section.news") }}</h3>
           <h3 class="section-subtitle">{{ $t("message.section.news2") }}</h3>
         </div>
-        <div class="row card-slider" style="margin-bottom: 20px;">
+        <div class="row card-slider" style="margin-bottom: 20px;flex-wrap: nowrap;">
           <div class="news-card-div firstcard">
             <newsblock
             image="/static/img/news/news1.jpg"
@@ -188,9 +188,6 @@ import homeslide from '@/components/homeslide.vue'
 import {
   mdbIcon
 } from 'mdbvue'
-import Vue from 'vue'
-import VueCarousel from 'vue-carousel'
-Vue.use(VueCarousel)
 export default {
   name: 'home',
   created() {

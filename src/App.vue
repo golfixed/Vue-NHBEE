@@ -18,7 +18,4 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Kanit|Sarabun|Chakra+Petch');
-@import 'assets/bootstrap/css/bootstrap.css';
-
 </style>

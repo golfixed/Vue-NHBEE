@@ -46,9 +46,9 @@
               <li>
                 <router-link to="/news">{{ $t("message.navbar.col3") }}</router-link>
               </li>
-              <li>
+              <!-- <li>
                 <router-link to="/survey">{{ $t("message.navbar.col4") }}</router-link>
-              </li>
+              </li> -->
               <li>
                 <router-link to="/research">{{ $t("message.navbar.col5") }}</router-link>
               </li>
@@ -122,6 +122,9 @@ export default {
 </script>
 
 <style scoped>
+/* .webname-txt{
+  font-family: 'Chakra Petch', sans-serif;
+} */
 .lanbtn{
     border: solid;
     color: #6BA329;

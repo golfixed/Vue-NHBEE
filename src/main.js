@@ -5,9 +5,11 @@ import 'bootstrap-css-only/css/bootstrap.min.css'
 import 'mdbvue/build/css/mdb.css'
 import VueI18n from 'vue-i18n'
 import messages from './locales'
+import VueCarousel from 'vue-carousel'
 
 Vue.config.productionTip = false
 
+Vue.use(VueCarousel)
 Vue.use(VueI18n)
 const i18n = new VueI18n({
   locale: 'en', // set locale
