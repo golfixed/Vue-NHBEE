@@ -1,7 +1,7 @@
 <template>
 <div>
     <div class="home-header-bg"/>
-    <div class="container" style="margin-top: -310px;">
+    <div class="container home-top-fix">
       <div class="container page-title d-flex align-items-center">
         <div class="row flex-column page-title-padding-fix">
           <h3 class="page-title-yellbold">{{ $t("message.pageheader.home.title") }}</h3>
@@ -10,9 +10,10 @@
       </div>
       <div class="slide-div" style="overflow: hidden;">
         <homeslide
-        pic1="/static/img/01.jpg"
-        pic2="/static/img/02.jpg"
-        pic3="/static/img/03.jpg"
+        pic1="/static/img/homeslide/01.jpg"
+        pic2="/static/img/homeslide/02.jpg"
+        pic3="/static/img/homeslide/03.jpg"
+        pic4="/static/img/homeslide/04.jpg"
         >
         </homeslide>
       </div>
@@ -237,6 +238,20 @@ export default {
 }
 </script>
 <style scpoed>
+
+@media screen and (max-width: 320px){
+  .home-top-fix{
+  margin-top: -240px !important;
+  }
+}
+@media screen and (max-width: 425px){
+  .home-top-fix{
+  margin-top: -240px !important;
+  }
+}
+.home-top-fix{
+  margin-top: -310px;
+}
 .hover:hover{
   transition-duration: 0.3s;
   transform: scale(1.1);

@@ -47,16 +47,55 @@ export default {
 </script>
 
 <style>
-@media (min-width: 425px){
-    .navheight{
-        height: 70px !important;
-    }
+/* Samsung */
+@media (max-width: 320px){
+  .page-title-yellbold {
+    font-size: 30px !important;
+
+  }
+  .page-subtitle {
+    font-size: 27px !important;
+
+  }
+  .page-title {
+    height: 150px !important;
+  }
 }
+
+/* iPhone Plus */
+@media (max-width: 425px){
+    .navheight{
+        height: 60px !important;
+    }
+    .webname-txt {
+      font-family: 'Kanit', sans-serif;
+      font-size: 20px !important;
+    }
+    .logo {
+      height: 38px !important;
+    }
+    .page-title-padding-fix {
+      padding: 0px !important;
+    }
+    .home-header-bg {
+      height: 225px !important;
+    }
+    .page-title {
+    height: 160px !important;
+    }
+  #navbar-nav a {
+    font-size: 20px !important;
+    height: 38px !important;
+    line-height: 45px !important;
+  }
+}
+/* iPad */
 @media (min-width: 768px){
     .navheight{
-        height: 100px !important;
+        height: 80px !important;
     }
 }
+/* Desktop and more */
 @media (min-width: 769px){
     .navheight{
         height: 120px !important;
@@ -286,7 +325,7 @@ ul {
 }
 
 .page-title-padding-fix {
-  padding: 0px 0px 0px 15px !important;
+  padding: 0px 0px 0px 15px;
 }
 
 .slide-div {

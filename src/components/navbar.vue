@@ -11,7 +11,7 @@
             </div>
           </div>
           <div class="col-6 d-flex flex-row align-items-center header-div-padding">
-            <form class="form-inline my-2 my-lg-0 ml-auto p-2">
+            <form class="form-inline my-2 my-lg-0 ml-auto">
               <input
                 class="form-control mr-sm-2 searchbox golfsearch"
                 type="search"
@@ -21,21 +21,20 @@
               <button class="topsearch" type="submit" style="margin-right: 8px; padding-left: 11px; padding-right: 11px;">
                 <mdb-icon icon="search" />
               </button>
-              <button class="lanbtn d-flex flex-rol align-items-center" @click="switchLocal()"><mdb-icon icon="globe" style=" font-size: 20px;margin-right: 5px;"/>{{ displayLocal }}</button>
+              <button class="lanbtn d-flex flex-rol align-items-center" @click="switchLocal()" style="margin-right: 8px;"><mdb-icon icon="globe" style=" font-size: 20px;margin-right: 5px;"/>{{ displayLocal }}</button>
+              <button class="hamburger d-flex align-items-center justify-content-center" v-on:click="toggle()" type="button"><mdb-icon icon="bars" /></button>
             </form>
-            <nav class="nav-mb-display">
+            <!-- <nav class="">
               <div>
-                <button class="btn hamburger" v-on:click="toggle()" type="button">
-                  <mdb-icon icon="bars" />
-                </button>
+                
               </div>
-            </nav>
+            </nav> -->
           </div>
         </div>
       </div>
       <div class="row navbar-div d-flex justify-content-center">
         <div class="container d-flex align-items-center justify-content-center">
-          <nav :class="[{'show': hamburger}, 'nav-display']">
+          <nav :class="[{'show': hamburger}, 'nav-display ham-page'] ">
             <ul id="navbar-nav">
               <li class="active">
                 <router-link to="/home">{{ $t("message.navbar.col1") }}</router-link>
@@ -125,6 +124,21 @@ export default {
 /* .webname-txt{
   font-family: 'Chakra Petch', sans-serif;
 } */
+@media (min-width: 769px){
+  .lanbtn{
+    display: inherit !important;
+  }
+
+}
+@media (max-width: 425px){
+  .lanbtn{
+    display: none !important;
+  }
+  #navbar-nav li {
+    height: 50px !important;
+  }
+
+}
 .lanbtn{
     border: solid;
     color: #6BA329;
@@ -148,6 +162,7 @@ export default {
     width: 42px;
     -webkit-box-shadow: 0 0 0 0 !important;
     box-shadow: 0 0 0 0 !important;
+    display: none !important;
 }
 @media screen and (max-width: 768px) {
   .nav-display.show {
@@ -157,6 +172,17 @@ export default {
   #navbar-nav li {
     display: block;
     width: 100%;
+    border-width: 0px 0px 1px 0px !important;
+    border: solid;
+    border-color: rgb(228, 228, 228);
+    margin-top: 15px;
+    margin-left: 0px !important ;
+  }
+  .ham-page{
+    height: 100vh !important;
+  }
+  .hamburger{
+    display: inherit !important;
   }
 }
 </style>
