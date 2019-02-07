@@ -152,6 +152,15 @@ export default {
         back: 'Back',
         enter: 'Log In'
       }
+    },
+    page3_news: {
+      title: 'NEWS',
+      username: 'Username',
+      password: 'Password',
+      btn: {
+        back: 'Back',
+        enter: 'Log In'
+      }
     }
   }
 }

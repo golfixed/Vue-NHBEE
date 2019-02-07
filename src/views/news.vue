@@ -1,18 +1,18 @@
 <template>
   <div>
-    <div class="research-header-bg"/>
+    <div class="news-header-bg"/>
     <div class="container" style="margin-top: -280px;">
       <div class="container page-title d-flex align-items-center">
         <div class="row flex-column page-title-padding-fix">
-          <h3 class="page-title-yellbold">{{ $t("message.pageheader.research.title") }}</h3>
-          <h3 class="page-subtitle">{{ $t("message.pageheader.research.subtitle") }}</h3>
+          <h3 class="page-title-yellbold">{{ $t("message.pageheader.news.title") }}</h3>
+          <h3 class="page-subtitle">{{ $t("message.pageheader.news.subtitle") }}</h3>
         </div>
       </div>
       <div class="page-body" style="overflow: hidden;">
           <div class="container">
             <div class="row" style="padding-top: 40px;">
               <div class="col-12">
-                <h3 style="text-align: center;">{{ $t("message.page5_research.title") }}</h3>
+                <h3 style="text-align: center;">{{ $t("message.page3_news.title") }}</h3>
               </div>
               <div class="col-12" style="margin-bottom: 30px;">
                 <div class="container">
@@ -168,9 +168,9 @@ export default {
   border: solid;
   border-width: 0px 0px 0px 3px;
 }
-.research-header-bg {
+.news-header-bg {
   height: 280px;
-  background-image: url("/static/img/research/bg.jpg");
+  background-image: url("/static/img/news/bg.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
