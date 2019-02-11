@@ -10,7 +10,7 @@ export default {
         subtitle: 'Getting know us'
       },
       news: {
-        title: 'News and Update',
+        title: 'News',
         subtitle: 'Check out these updates'
       },
       survey: {

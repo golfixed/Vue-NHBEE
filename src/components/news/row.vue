@@ -1,37 +1,41 @@
 <template>
   <div class="row block">
-    <div class="col-md-9">
-      <div class="title">{{title}}</div>
-      <div class="des">{{description}}</div>
-      <div class="row d-flex justify-content-start" style="margin-left: 10px;">
-        <golfbtn text="Read More" />
-        <sharebtn />
-
+    <div class="row">
+      <div class="col-md-3">
+        <img
+          :src="img"
+          style="width: 100%; overflow: hidden; border-radius: 5px;    margin: 10px 0px;"
+        />
       </div>
-    </div>
-    <div class="col-md-3">
-      <img
-        :src="img"
-        style="width: 100%; overflow: hidden; border-radius: 5px;"
-      />
+      <div class="col-md-9">
+        <div class="news-title">{{title}}</div>
+        <div class="des">{{description}}</div>
+        <router-link :to="link"><p class="readmore-btn d-flex justify-content-end">Read More</p></router-link>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import golfbtn from '@/components/button/golfbotton'
-import sharebtn from '@/components/button/sharebtn'
 export default {
   name: 'newsrow',
-  props: ['title', 'description', 'img'],
+  props: ['title', 'description', 'img','link'],
   components: {
-    golfbtn,
-    sharebtn
   }
 }
 </script>
 
 <style scoped>
+.readmore-btn{
+  font-size: 15px;
+  margin: 0px;
+  color: #6c757d;
+}
+.readmore-btn:hover{
+  font-size: 15px;
+  margin: 0px;
+  color: black;
+}
 .golfbtn {
   background-color: #0ca514;
   color: #fff !important;
@@ -51,7 +55,7 @@ export default {
     white-space: normal;
     word-wrap: break-word;
 }
-.title {
+.news-title {
   margin: 10px 0px 10px 0px;
   padding-left: 10px;
   color: #e3b800;

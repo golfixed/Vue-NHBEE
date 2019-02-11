@@ -7,6 +7,7 @@ import login from '@/views/login'
 import upcoming from '@/views/upcoming'
 import research from '@/views/research'
 import news from '@/views/news'
+import news_article from '@/views/news_article'
 
 Vue.use(Router)
 
@@ -46,6 +47,11 @@ export default new Router({
       path: '/news',
       name: 'News',
       component: news
+    },
+    {
+      path: '/news/article',
+      name: 'Article',
+      component: news_article
     }
   ],
   scrollBehavior (to, from, savedPosition) {

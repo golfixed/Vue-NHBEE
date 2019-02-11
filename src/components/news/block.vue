@@ -12,7 +12,7 @@
 <script>
 import { mdbCard, mdbCardImage, mdbCardBody, mdbCardTitle, mdbCardText, mdbBtn } from 'mdbvue'
 export default {
-  name: 'newsblock',
+  name: 'block',
   props: ['image', 'title', 'description', 'link'],
   components: {
     mdbCard,

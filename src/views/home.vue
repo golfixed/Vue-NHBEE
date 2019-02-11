@@ -183,7 +183,7 @@
 <script>
 import layout_default from '@/layouts/layout_web.vue'
 import papertable from '@/components/papertable.vue'
-import newsblock from '@/components/newsblock.vue'
+import newsblock from '@/components/news/block.vue'
 import block from '@/components/quicklink.vue'
 import homeslide from '@/components/homeslide.vue'
 import {

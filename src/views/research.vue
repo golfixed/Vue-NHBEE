@@ -38,10 +38,7 @@
                   </mdb-list-group>
 
                   <div class="row">
-                    <div class="col-md-6">
-
-                    </div>
-                    <div class="col-md-6 d-flex justify-content-end">
+                    <div class="col-md-12 d-flex justify-content-center">
                       <nav>
                         <mdb-pagination >
                           <mdb-page-item disabled>First</mdb-page-item>

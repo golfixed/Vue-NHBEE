@@ -15,24 +15,25 @@
               <h3 style="text-align: center;">{{ $t("message.page3_news.title") }}</h3>
             </div>
             <div class="container">
-              <block
+              <row
               title="Honeybees have a noontime break from their dancing activity"
-              description="This finding showed that Apis florea bees largely avoid flying off between 12:00 h and 13:00 h on the one hand, and that their preferred departure angle of the sun is between 55๐ and 65๐ on the other. Given the difficulties of taking an accurate reading of the sun"
+              description="This finding showed that Apis florea bees largely avoid flying off between 12:00 h and 13:00 h on the one hand, and that their preferred departure angle of the sun is between 55๐ and 65๐ on the other. Given the difficulties of taking an accurate reading of the sun..."
               img="/static/img/news/n/n1.png"
+              link="/news/article"
               />
-              <block
+              <row
               title="Dance language in finding new nest site and foraging"
-              description="Von Frisch discovered a particularly exciting facet of honeybee biology: communication by the dance language (Fig 2). Only later, when Lindauer entered the scene, did studies on Asian honeybees gain a footing. Since then, great strides have been made with respect to foraging range versus the dance tempo that shows some of the unique properties of Asian bees."
+              description="Von Frisch discovered a particularly exciting facet of honeybee biology: communication by the dance language (Fig 2). Only later, when Lindauer entered the scene, did studies on Asian honeybees gain a footing. Since then, great strides have been made with respect to foraging range versus the dance tempo that shows some of the unique properties of Asian bees..."
               img="/static/img/news/n/n2.png"
               />
-              <block
+              <row
               title="Biodiversity and conservation of honeybees and stingless bees"
-              description="The geographical distribution of honeybees and stingless bees in Thailand has been studied. The distribution of four of the eleven species of honeybees of the world has been investigated and record (Fig 3). Stingless bees, of which over 500 species are found, 33 species of which are found in Thailand"
+              description="The geographical distribution of honeybees and stingless bees in Thailand has been studied. The distribution of four of the eleven species of honeybees of the world has been investigated and record (Fig 3). Stingless bees, of which over 500 species are found, 33 species of which are found in Thailand..."
               img="/static/img/news/n/n3.png"
               />
-              <block
+              <row
               title="Ant repellent resins of honeybees and stingless bees"
-              description="This study was conducted to evaluate the ant repellent affect of plant resins against weaver ants, Oecophylla smaragdina (Fig 4). The resins tested were the sticky bands used by the dwarf honeybees, Apis florea and A. andreniformis, propolis from the European honeybee."
+              description="This study was conducted to evaluate the ant repellent affect of plant resins against weaver ants, Oecophylla smaragdina (Fig 4). The resins tested were the sticky bands used by the dwarf honeybees, Apis florea and A. andreniformis, propolis from the European honeybee..."
               img="/static/img/news/n/n4.png"
               />
             </div>
@@ -58,14 +59,14 @@
   </div>
 </template>
 <script>
-import { mdbPagination, mdbPageNav, mdbPageItem} from 'mdbvue'
+import { mdbPagination, mdbPageNav, mdbPageItem } from 'mdbvue'
 import layout_default from '@/layouts/layout_web.vue'
-import block from '@/components/newsrow'
+import row from '@/components/news/row.vue'
 export default {
   name: 'research',
   components: {
-    block,
-    mdbPagination, 
+    row,
+    mdbPagination,
     mdbPageNav,
     mdbPageItem,
   },
@@ -75,16 +76,6 @@ export default {
 };
 </script>
 <style scpoed>
-.title {
-  margin: 10px 0px 10px 0px;
-  padding-left: 10px;
-  color: #e3b800;
-  font-weight: bold;
-  font-size: 20px;
-  border-color: #e3b800;
-  border: solid;
-  border-width: 0px 0px 0px 3px;
-}
 .top-fix {
   margin-top: -310px;
 }
@@ -141,7 +132,7 @@ export default {
   background-color: white;
   height: auto;
   border-radius: 5px;
-  margin: 10px 10px 30px 10px;
+  margin: 30px 10px 30px 10px;
   -webkit-box-shadow: 0px 2px 10px -1px #999;
   -moz-box-shadow: 0px 2px 10px -1px #999;
   box-shadow: 0px 2px 10px -1px #999;
