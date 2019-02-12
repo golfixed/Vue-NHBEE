@@ -53,17 +53,6 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  transition-duration: 0.2s;
-  filter: grayscale(40%);
-}
-.quicklink:hover{
-  height: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition-duration: 0.2s;
-  transform: scale(1.1);
-  filter: grayscale(0%);
 }
 
 .quicklink:active {

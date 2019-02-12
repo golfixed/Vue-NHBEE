@@ -47,6 +47,9 @@ export default {
 </script>
 
 <style>
+.body-padding {
+  padding: 30px;
+}
 /* Samsung */
 @media (max-width: 320px){
   .page-title-yellbold {

@@ -70,7 +70,7 @@ export default {
   margin-bottom: 10px;
 }
 .block{
-  padding: 30px;
+  padding: 30px 30px 0px 30px;
   border: solid;
   border-width: 0px 0px 1px 0px;
   border-color: #f8f9fa;

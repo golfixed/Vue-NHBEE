@@ -10,15 +10,9 @@
       </div>
       <div class="page-body" style="overflow: hidden;">
           <div class="container">
-            <div class="row" style="padding-top: 40px;">
-              <div class="col-12">
-                <h3 style="text-align: center;">{{ $t("message.page6_contact.title") }}</h3>
-              </div>
-            </div>
-
-            <div class="row" style="padding: 20px 20px 35px 20px;">
+            <div class="row body-padding">
               <div class="col-md-6">
-                <div><p class="topic">{{ $t("message.page6_contact.address.title") }}</p></div>
+                <div><p class="topic" style=" margin-top: 0px !important;">{{ $t("message.page6_contact.address.title") }}</p></div>
                 <div>
                   <div class="d-flex flex-row p-2 align-items-center">
                   <mdb-icon icon="building" style="margin-right: 10px;"/>

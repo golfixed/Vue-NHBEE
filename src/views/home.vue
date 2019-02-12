@@ -10,8 +10,8 @@
       </div>
       <div class="slide-div" style="overflow: hidden;">
         <homeslide
-        pic1="/static/img/homeslide/01.jpg"
-        pic2="/static/img/homeslide/02.jpg"
+        pic1="/static/img/homeslide/02.jpg"
+        pic2="/static/img/homeslide/01.jpg"
         pic3="/static/img/homeslide/03.jpg"
         pic4="/static/img/homeslide/04.jpg"
         >
@@ -24,7 +24,7 @@
           <div class="container card" style="padding-left: 0px;padding-right: 0px;">
             <block
               link="/research"
-              img="/static/img/home/ql/lab.jpg"
+              img="/static/img/home/ql/research.jpg"
               :title="quicklink1"
               :description="quicklink1sub"
             />
@@ -34,7 +34,7 @@
           <div class="container card" style="padding-left: 0px;padding-right: 0px;">
             <block
               link="/about"
-              img="/static/img/home/ql/team.jpg"
+              img="/static/img/home/ql/staff.jpg"
               :title="quicklink2"
               :description="quicklink2sub"
             />
@@ -260,7 +260,7 @@ export default {
     border: solid;
     border-color: #E3B800;
     border-width: 0px 0px 0px 5px;
-    margin: 19px 0px 20px 0px;
+    margin: 50px 0px 20px 0px;
 }
 .section-title{
   font-size: 30px;

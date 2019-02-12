@@ -1,17 +1,15 @@
 <template>
-    <div class="container">
+    <div class="container top-fix2">
 
       <div class="page-body" style="overflow: hidden;">
         <div class="container">
           <div class="row">
                 <article1
                     title="Honeybees have a noontime break from their dancing activity"
-                    description="This finding showed that Apis florea bees largely avoid flying off between 12:00 h and 13:00 h on the one hand, and that their preferred departure angle of the sun is between 55๐ and 65๐ on the other. Given the difficulties of taking an accurate reading of the sun..."
+                    description="This finding showed that Apis florea bees largely avoid flying off between 12:00 h and 13:00 h on the one hand, and that their preferred departure angle of the sun is between 55°c and 65°c on the other. Given the difficulties of taking an accurate reading of the sun at angles 6๐ of the sun’s zenith (resulting in a 1 h loss around noon) and the 2 h required to reach consensus over the final direction to be flown, the bees are simply left with two time windows, morning and afternoon, in which to abscond and, indeed some 90% of the red dwarf honeybee colonies do so (Fig 1). The noonday lull is not associated with high temperatures for any given day. Absconding is not inhibited by high temperatures. ( cf. Duangphakdee et al., 2009. Journal of Insect Physiology 55: 1009-1012)."
                     image="/static/img/news/n/n1.png"
+                    date="February 23rd, 2019"
                 />
-          </div>
-          <div>
-              <router-link to="/news">Back</router-link>
           </div>
         </div>
       </div>
@@ -32,8 +30,8 @@ export default {
 };
 </script>
 <style scpoed>
-.top-fix {
-  margin-top: 123px;
+.top-fix2 {
+  margin-top: 0px;
 }
 .pagination.pg-blue .page-item.active .page-link {
   background-color: #e1b534;

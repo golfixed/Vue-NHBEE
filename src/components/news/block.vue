@@ -1,10 +1,9 @@
 <template>
-<mdb-card style="width: 250px; height: 350px;">
+<mdb-card style="width: 250px;">
     <mdb-card-image :src=" image" alt="Card image cap"></mdb-card-image>
     <mdb-card-body>
       <mdb-card-title>{{title}}</mdb-card-title>
       <mdb-card-text>{{description}}</mdb-card-text>
-      <mdb-btn :href=" link " color="primary" class="readmore-btn">{{ $t("message.btn.readmore") }}</mdb-btn>
     </mdb-card-body>
   </mdb-card>
 </template>
@@ -57,14 +56,14 @@ export default {
   overflow: hidden;
   border: 0;
 }
-.readmore-btn{
-    background-color: #E3B800 !important;
-    border-color: #E3B800;
-    box-shadow: none !important;
+.readmore{
     margin-left: 0px;
     margin-right: 0px;
-    border-bottom-width: 1px;
     margin-bottom: 0px;
     margin-top: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 </style>

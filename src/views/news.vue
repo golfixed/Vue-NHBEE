@@ -10,10 +10,7 @@
       </div>
       <div class="page-body" style="overflow: hidden;">
         <div class="container">
-          <div class="row" style="padding-top: 40px;">
-            <div class="col-12">
-              <h3 style="text-align: center;">{{ $t("message.page3_news.title") }}</h3>
-            </div>
+          <div class="row">
             <div class="container">
               <row
               title="Honeybees have a noontime break from their dancing activity"
@@ -25,16 +22,19 @@
               title="Dance language in finding new nest site and foraging"
               description="Von Frisch discovered a particularly exciting facet of honeybee biology: communication by the dance language (Fig 2). Only later, when Lindauer entered the scene, did studies on Asian honeybees gain a footing. Since then, great strides have been made with respect to foraging range versus the dance tempo that shows some of the unique properties of Asian bees..."
               img="/static/img/news/n/n2.png"
+              link="/news/article"
               />
               <row
               title="Biodiversity and conservation of honeybees and stingless bees"
               description="The geographical distribution of honeybees and stingless bees in Thailand has been studied. The distribution of four of the eleven species of honeybees of the world has been investigated and record (Fig 3). Stingless bees, of which over 500 species are found, 33 species of which are found in Thailand..."
               img="/static/img/news/n/n3.png"
+              link="/news/article"
               />
               <row
               title="Ant repellent resins of honeybees and stingless bees"
               description="This study was conducted to evaluate the ant repellent affect of plant resins against weaver ants, Oecophylla smaragdina (Fig 4). The resins tested were the sticky bands used by the dwarf honeybees, Apis florea and A. andreniformis, propolis from the European honeybee..."
               img="/static/img/news/n/n4.png"
+              link="/news/article"
               />
             </div>
             <div class="col-12" style="margin-top: 20px;">
