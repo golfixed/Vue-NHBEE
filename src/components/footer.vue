@@ -9,14 +9,14 @@
                     <img class="footer-logo" src="/static/img/logo.png" />
                     <img class="footer-logo" src="/static/img/logo-kmutt.png" />
                   </div>
-                  <div class="col-md-8 d-flex flex-column">
+                  <div class="col-md-8 d-flex flex-column mb-center" >
                     <h5 style="font-weight: bold;">NHBEE KMUTT</h5>
                     <h6 style="font-weight: bold;">Native Honeybee Research Laboratory</h6>
-                    <h6>{{ $t("message.footer.address.name") }}</h6>
-                    <h6>{{ $t("message.footer.address.add") }}</h6>
+                    <h6 class="addressfont">{{ $t("message.footer.address.name") }}</h6>
+                    <h6 class="addressfont">{{ $t("message.footer.address.add") }}</h6>
                   </div>
                 </div>
-                <div class="col-md-5 left-hr quicklink-fix">
+                <div class="col-md-5 left-hr quicklink-fix ftlinkmb">
                   <div class="row">
                     <div class="col-4 more-left-space">
                       <h6>{{ $t("message.footer.link.col1.colname") }}</h6>
@@ -97,10 +97,26 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .footer-logo{
   margin: 0px 20px 0px 0px;
   width: 70px;
   height: 70px;
+}
+@media screen and (max-width: 425px) {
+  .addressfont{
+    font-size: 14px;
+  }
+  .footer-logo{
+    margin: 0px 20px;
+    width: 70px;
+    height: 70px;
+  }
+  .mb-center{
+    text-align: center;
+  }
+  .ftlinkmb{
+    display: none;
+  }
 }
 </style>
