@@ -1,12 +1,12 @@
 <template>
   <mdb-list-group>
-    <mdb-list-group-item :action="true" href="#">งานวิจัยเกี่ยวกับระบบสืบพันธ์ของผึ้ง <button class="new">ใหม่</button>
+    <mdb-list-group-item :action="true" href="#">งานวิจัยเกี่ยวกับระบบสืบพันธ์ของผึ้ง 
     </mdb-list-group-item>
-    <mdb-list-group-item :action="true" href="#">วิจัยอาณาจักรของผึ้ง <button class="popular">ยอดนิยม</button>
+    <mdb-list-group-item :action="true" href="#">วิจัยอาณาจักรของผึ้ง 
     </mdb-list-group-item>
     <mdb-list-group-item :action="true" href="#">การทำงานของระบบประสาทของผึ้ง
     </mdb-list-group-item>
-    <mdb-list-group-item :action="true" href="#">งานวิจัยเกี่ยวกับความเหมือนหรือแตกต่างของผึ้งไทย และผึ้งชันโรง <button class="updated">อัปเดตล่าสุด</button>
+    <mdb-list-group-item :action="true" href="#">งานวิจัยเกี่ยวกับความเหมือนหรือแตกต่างของผึ้งไทย และผึ้งชันโรง 
     </mdb-list-group-item>
     <mdb-list-group-item :action="true" href="#">งานวิจัยเกี่ยวกับรังผึ้งหลวงไทยในจังหวัดขอนแก่น
     </mdb-list-group-item>
