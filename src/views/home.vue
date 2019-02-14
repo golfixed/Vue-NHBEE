@@ -1,5 +1,5 @@
 <template>
-<div>
+  <div>
     <div class="home-header-bg"/>
     <div class="container home-top-fix">
       <div class="container page-title d-flex align-items-center">
@@ -10,12 +10,11 @@
       </div>
       <div class="slide-div" style="overflow: hidden;">
         <homeslide
-        pic1="/static/img/homeslide/02.jpg"
-        pic2="/static/img/homeslide/01.jpg"
-        pic3="/static/img/homeslide/03.jpg"
-        pic4="/static/img/homeslide/04.jpg"
-        >
-        </homeslide>
+          pic1="/static/img/homeslide/02.jpg"
+          pic2="/static/img/homeslide/01.jpg"
+          pic3="/static/img/homeslide/03.jpg"
+          pic4="/static/img/homeslide/04.jpg"
+        ></homeslide>
       </div>
     </div>
     <div class="container">
@@ -64,55 +63,65 @@
         </div>
       </div>
     </div>
-    <div class="container" style="z-index: 1;">
-      <div class="container" >
+    <div class="container news-block-slide" style="z-index: 1;">
+      <div class="container news-block-slide">
         <div class="row flex-column page-title-padding-fix section-div">
           <h3 class="section-title">{{ $t("message.section.news") }}</h3>
           <h3 class="section-subtitle">{{ $t("message.section.news2") }}</h3>
         </div>
-        <div class="row card-slider" style="margin-bottom: 20px;flex-wrap: nowrap;">
+        <div
+          class="row card-slider"
+          style="margin-bottom: 20px;flex-wrap: nowrap;border-radius: 5px;"
+        >
           <div class="news-card-div firstcard">
             <newsblock
-            image="/static/img/news/news1.jpg"
-            title="ตัวอย่างข่าว 1"
-            description="รายละเอียดของข่าวจะเขียนตรงนี้ เขียนได้ประมาณ 2 บรรทัดจะพอดี"
-            link="https://google.com"
-          /></div>
-          <div class="news-card-div ">
+              image="/static/img/news/news1.jpg"
+              title="ตัวอย่างข่าว 1"
+              description="รายละเอียดของข่าวจะเขียนตรงนี้ เขียนได้ประมาณ 2 บรรทัดจะพอดี"
+              link="https://google.com"
+            />
+          </div>
+          <div class="news-card-div">
             <newsblock
-            image="/static/img/news/news5.jpg"
-            title="ตัวอย่างข่าว 2"
-            description="รายละเอียดของข่าวจะเขียนตรงนี้ เขียนได้ประมาณ 2 บรรทัดจะพอดี"
-          /></div>
-          <div class="news-card-div ">
+              image="/static/img/news/news5.jpg"
+              title="ตัวอย่างข่าว 2"
+              description="รายละเอียดของข่าวจะเขียนตรงนี้ เขียนได้ประมาณ 2 บรรทัดจะพอดี"
+            />
+          </div>
+          <div class="news-card-div">
             <newsblock
-            image="/static/img/news/news3.jpg"
-            title="งานวิจัยใหม่สุดว้าว"
-            description="รายละเอียดของข่าวจะเขียนตรงนี้ เขียนได้ประมาณ 2 บรรทัดจะพอดี"
-          /></div>
-          <div class="news-card-div ">
-            <newsblock image="/static/img/news/news4.jpg"
-            title="เรื่องของผึ้งไทย"
-            description="รายละเอียดของข่าวจะเขียนตรงนี้ เขียนได้ประมาณ 2 บรรทัดจะพอดี"
-          /></div>
-          <div class="news-card-div ">
+              image="/static/img/news/news3.jpg"
+              title="งานวิจัยใหม่สุดว้าว"
+              description="รายละเอียดของข่าวจะเขียนตรงนี้ เขียนได้ประมาณ 2 บรรทัดจะพอดี"
+            />
+          </div>
+          <div class="news-card-div">
             <newsblock
-            image="/static/img/news/news1.jpg"
-            title="หัวข้อข่าว จะ 2 บรรทัดก็ได้"
-            description="ขนาดรูปไม่สำคัญเพราะขนาดที่แสดงจะแสดงตามปริมาณของข้อความ"
-          /></div>
-          <div class="news-card-div ">
+              image="/static/img/news/news4.jpg"
+              title="เรื่องของผึ้งไทย"
+              description="รายละเอียดของข่าวจะเขียนตรงนี้ เขียนได้ประมาณ 2 บรรทัดจะพอดี"
+            />
+          </div>
+          <div class="news-card-div">
             <newsblock
-            image="/static/img/news/news2.jpg"
-            title="ตัวอย่างข่าว 3"
-            description="รายละเอียดของข่าวจะเขียนตรงนี้ แต่ถ้า 3 บรรทัดรูปก็จะเล็กลงแทน เพราะล็อคขนาดของกล่องแสดงไว้"
-            /></div>
+              image="/static/img/news/news1.jpg"
+              title="หัวข้อข่าว จะ 2 บรรทัดก็ได้"
+              description="ขนาดรูปไม่สำคัญเพราะขนาดที่แสดงจะแสดงตามปริมาณของข้อความ"
+            />
+          </div>
+          <div class="news-card-div">
+            <newsblock
+              image="/static/img/news/news2.jpg"
+              title="ตัวอย่างข่าว 3"
+              description="รายละเอียดของข่าวจะเขียนตรงนี้ แต่ถ้า 3 บรรทัดรูปก็จะเล็กลงแทน เพราะล็อคขนาดของกล่องแสดงไว้"
+            />
+          </div>
         </div>
-        </div>
+      </div>
     </div>
     <div class="container" style="z-index: 1;">
-      <div class="container" >
-        <div class="row page-title-padding-fix section-div ">
+      <div class="container">
+        <div class="row page-title-padding-fix section-div">
           <div class="col-12" style="padding: 0; margin: 0;">
             <h3 class="section-title">{{ $t("message.section.research") }}</h3>
             <h3 class="section-subtitle">{{ $t("message.section.research2") }}</h3>
@@ -120,7 +129,7 @@
           <!-- <div class="col-6 d-flex justify-contennt-end">
             <i class="fa fa-file-text" aria-hidden="true"></i>
             <h3 class="section-subtitle">งานวิจัยทั้งหมด</h3>
-          </div> -->
+          </div>-->
         </div>
         <div class="col-12" style="margin-bottom: 30px; padding: 0px;">
           <papertable/>
@@ -138,11 +147,31 @@
             </div>
           </div>
         </div>
-        <div class="container" style="padding: 30px 0px 30px 0px ;">
+        <div class="container text-center" style="padding: 30px 0px 30px 0px ;">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 social-tag-desktop">
               <p>{{ $t("message.connect.connect_text") }}</p>
               <div class="d-flex flex-row" style="margin-top: 10px;">
+                <div class="p-2">
+                  <a href="https://www.facebook.com/nhbeekmutt" target="_blank">
+                    <mdb-icon fab icon="facebook-square" class="socialicon fb"/>
+                  </a>
+                </div>
+                <div class="p-2">
+                  <a href="https://www.twitter.com/nhbeekmutt" target="_blank">
+                    <mdb-icon fab icon="twitter" class="socialicon twitter"/>
+                  </a>
+                </div>
+                <div class="p-2">
+                  <a href="https://www.youtube.com/nhbeekmutt" target="_blank">
+                    <mdb-icon fab icon="youtube" class="socialicon youtube"/>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 social-tag-mobile">
+              <p>{{ $t("message.connect.connect_text") }}</p>
+              <div class="d-flex flex-row justify-content-center" style="margin-top: 10px;">
                 <div class="p-2">
                   <a href="https://www.facebook.com/nhbeekmutt" target="_blank">
                     <mdb-icon fab icon="facebook-square" class="socialicon fb"/>
@@ -167,7 +196,7 @@
                   <form class="example" action="/action_page.php">
                     <input type="text" :placeholder="emailsubph" name="search">
                     <button type="submit">
-                      <mdb-icon icon="envelope" />
+                      <mdb-icon icon="envelope"/>
                     </button>
                   </form>
                 </div>
@@ -181,16 +210,14 @@
 </template>
 
 <script>
-import layout_default from '@/layouts/layout_web.vue'
-import papertable from '@/components/papertable.vue'
-import newsblock from '@/components/news/block.vue'
-import block from '@/components/quicklink.vue'
-import homeslide from '@/components/homeslide.vue'
-import {
-  mdbIcon
-} from 'mdbvue'
+import layout_default from "@/layouts/layout_web.vue";
+import papertable from "@/components/papertable.vue";
+import newsblock from "@/components/news/block.vue";
+import block from "@/components/quicklink.vue";
+import homeslide from "@/components/homeslide.vue";
+import { mdbIcon } from "mdbvue";
 export default {
-  name: 'home',
+  name: "home",
   created() {
     this.$emit(`update:layout`, layout_default);
   },
@@ -202,75 +229,113 @@ export default {
     mdbIcon
   },
   computed: {
-    quicklink1: function () {
-      return this.$t('message.quicklink.link1')
+    quicklink1: function() {
+      return this.$t("message.quicklink.link1");
     },
-    quicklink1sub: function () {
-      return this.$t('message.quicklink.link1sub')
+    quicklink1sub: function() {
+      return this.$t("message.quicklink.link1sub");
     },
-    quicklink2: function () {
-      return this.$t('message.quicklink.link2')
+    quicklink2: function() {
+      return this.$t("message.quicklink.link2");
     },
-    quicklink2sub: function () {
-      return this.$t('message.quicklink.link2sub')
+    quicklink2sub: function() {
+      return this.$t("message.quicklink.link2sub");
     },
-    quicklink3: function () {
-      return this.$t('message.quicklink.link3')
+    quicklink3: function() {
+      return this.$t("message.quicklink.link3");
     },
-    quicklink3sub: function () {
-      return this.$t('message.quicklink.link3sub')
+    quicklink3sub: function() {
+      return this.$t("message.quicklink.link3sub");
     },
-    quicklink4: function () {
-      return this.$t('message.quicklink.link4')
+    quicklink4: function() {
+      return this.$t("message.quicklink.link4");
     },
-    quicklink4sub: function () {
-      return this.$t('message.quicklink.link4sub')
+    quicklink4sub: function() {
+      return this.$t("message.quicklink.link4sub");
     },
-    emailsubph: function () {
-      return this.$t('message.connect.email_ph')
+    emailsubph: function() {
+      return this.$t("message.connect.email_ph");
     }
   },
   methods: {
-    scrollToTop () {
-      window.scrollTo(0, 0)
+    scrollToTop() {
+      window.scrollTo(0, 0);
     }
   }
-}
+};
 </script>
 <style scpoed>
+.webname-txt {
+  display: inherit;
+}
 
-@media screen and (max-width: 320px){
-  .home-top-fix{
-  margin-top: -240px !important;
+@media screen and (max-width: 360px) {
+  .home-top-fix {
+    margin-top: -240px !important;
+  }
+  .section-title {
+    font-size: 25px !important;
+  }
+  .section-subtitle {
+    font-size: 15px !important;
   }
 }
-@media screen and (max-width: 425px){
-  .home-top-fix{
-  margin-top: -240px !important;
+@media screen and (max-width: 425px) {
+  .social-tag-mobile{
+    display: block !important;
+    margin: 10px 0px; 
+  }
+  .text-center{
+    text-align: center;
+  }
+  .socialicon {
+    font-size: 45px !important;
+    margin: 0px 20px;
+  }
+  .social-tag-desktop{
+    display: none !important;
+  }
+  .home-top-fix {
+    margin-top: -50vh !important;
+  }
+  .section-div {
+    border: none !important;
+  }
+  .news-block-slide {
+    padding-right: 0px;
+  }
+  .webname-txt {
+    display: none !important;
   }
 }
-.home-top-fix{
+  .social-tag-mobile{
+    display: none;
+  }
+  .social-tag-desktop{
+    display: block;
+  }
+.home-top-fix {
   margin-top: -310px;
 }
-.hover:hover{
+.hover:hover {
   transition-duration: 0.3s;
   transform: scale(1.1);
 }
-.section-div{
-    border: solid;
-    border-color: #E3B800;
-    border-width: 0px 0px 0px 5px;
-    margin: 50px 0px 20px 0px;
+.section-div {
+  border: solid;
+  border-color: #e3b800;
+  border-width: 0px 0px 0px 5px;
+  margin: 50px 0px 20px 0px;
 }
-.section-title{
+.section-title {
   font-size: 30px;
-  color: #E3B800;
+  color: #e3b800;
   font-weight: 400;
   z-index: 3;
 }
-.section-subtitle{
+.section-subtitle {
   font-size: 20px;
-  color: #5D5D5D;
+  color: #5d5d5d;
   font-weight: 100;
   z-index: 3;
 }
@@ -300,38 +365,38 @@ export default {
   border: 0;
 }
 
-.socialicon{
+.socialicon {
   font-size: 40px;
 }
-.fb{
+.fb {
   color: #707070;
   transition-duration: 0.2s;
 }
-.fb:hover{
+.fb:hover {
   color: #3b5998;
   transition-duration: 0.2s;
   transform: scale(1.1);
 }
-.twitter{
+.twitter {
   color: #707070;
   transition-duration: 0.2s;
 }
-.twitter:hover{
-  color: #1DA1F2;
+.twitter:hover {
+  color: #1da1f2;
   transition-duration: 0.2s;
   transform: scale(1.1);
 }
-.youtube{
+.youtube {
   color: #707070;
   transition-duration: 0.2s;
 }
-.youtube:hover{
+.youtube:hover {
   color: #ff0000;
   transition-duration: 0.2s;
   transform: scale(1.1);
 }
 
-.news-column{
+.news-column {
   background-color: white;
   height: auto;
   border-radius: 5px;
@@ -340,7 +405,7 @@ export default {
   -moz-box-shadow: 0px 2px 5px -1px #999;
   box-shadow: 0px 2px 5px -1px #999;
 }
-.card-slider{
+.card-slider {
   height: auto;
   margin: 0;
   width: 100%;
@@ -349,7 +414,7 @@ export default {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
-.news-card-div{
+.news-card-div {
   width: 250px;
   height: auto;
   margin: 0px 10px 10px 10px;
@@ -362,7 +427,7 @@ export default {
   }
 } */
 
-.firstcard{
+.firstcard {
   margin-left: 3px !important;
 }
 </style>

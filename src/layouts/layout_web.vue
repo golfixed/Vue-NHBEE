@@ -1,49 +1,51 @@
 <template>
-    <div>
-        <div class="navheight"><navbar/></div>
-        <div><slot/></div>
-        <footerall/>
+  <div>
+    <div class="navheight">
+      <navbar/>
     </div>
+    <div>
+      <slot/>
+    </div>
+    <footerall/>
+  </div>
 </template>
 
 <script>
-import footerall from '@/components/footer.vue'
-import navbar from '@/components/navbar.vue'
-import {
-    mdbIcon
-} from 'mdbvue'
+import footerall from "@/components/footer.vue";
+import navbar from "@/components/navbar.vue";
+import { mdbIcon } from "mdbvue";
 export default {
-    name: 'defaultlayout',
-    components: {
-        mdbIcon,
-        navbar,
-        footerall
-    },
-    data () {
+  name: "defaultlayout",
+  components: {
+    mdbIcon,
+    navbar,
+    footerall
+  },
+  data() {
     return {
       hamburger: false,
-      msg: 'Welcome to Your Vue.js App'
-    }
+      msg: "Welcome to Your Vue.js App"
+    };
   },
   methods: {
-    toggle () {
-      this.hamburger = !this.hamburger
+    toggle() {
+      this.hamburger = !this.hamburger;
     },
-    switchLocal () {
-      if (this.$i18n.locale === 'th') this.$i18n.locale = 'en'
-      else this.$i18n.locale = 'th'
+    switchLocal() {
+      if (this.$i18n.locale === "th") this.$i18n.locale = "en";
+      else this.$i18n.locale = "th";
     }
   },
   computed: {
-    displayLocal () {
-      if (this.$i18n.locale === 'th') return 'EN'
-      else return 'TH'
+    displayLocal() {
+      if (this.$i18n.locale === "th") return "EN";
+      else return "TH";
     },
-    searchbar: function () {
-      return this.$t('message.searchbar')
+    searchbar: function() {
+      return this.$t("message.searchbar");
     }
   }
-}
+};
 </script>
 
 <style>
@@ -51,14 +53,12 @@ export default {
   padding: 30px;
 }
 /* Samsung */
-@media (max-width: 320px){
+@media (max-width: 320px) {
   .page-title-yellbold {
     font-size: 30px !important;
-
   }
   .page-subtitle {
     font-size: 27px !important;
-
   }
   .page-title {
     height: 150px !important;
@@ -66,26 +66,26 @@ export default {
 }
 
 /* iPhone Plus */
-@media (max-width: 425px){
-    .navheight{
-        height: 60px !important;
-    }
-    .webname-txt {
-      font-family: 'Kanit', sans-serif;
-      font-size: 20px !important;
-    }
-    .logo {
-      height: 38px !important;
-    }
-    .page-title-padding-fix {
-      padding: 0px !important;
-    }
-    .home-header-bg {
-      height: 225px !important;
-    }
-    .page-title {
-    height: 160px !important;
-    }
+@media (max-width: 425px) {
+  .navheight {
+    height: 60px !important;
+  }
+  .webname-txt {
+    font-family: "Kanit", sans-serif;
+    font-size: 20px !important;
+  }
+  .logo {
+    height: 38px !important;
+  }
+  .page-title-padding-fix {
+    padding: 0px 0px 0px 10px;
+  }
+  .home-header-bg {
+    height: 50vh !important;
+  }
+  .page-title {
+    height: 35vh !important;
+  }
   #navbar-nav a {
     font-size: 20px !important;
     height: 38px !important;
@@ -93,40 +93,40 @@ export default {
   }
 }
 /* iPad */
-@media (min-width: 768px){
-    .navheight{
-        height: 80px !important;
-    }
+@media (min-width: 768px) {
+  .navheight {
+    height: 80px !important;
+  }
 }
 /* Desktop and more */
-@media (min-width: 769px){
-    .navheight{
-        height: 120px !important;
-    }
+@media (min-width: 769px) {
+  .navheight {
+    height: 120px !important;
+  }
 }
-.lanbtn{
-    border: solid;
-    color: #6BA329;
-    border-width: 1px;
-    border-color: #6BA329;
-    border-radius: 4px;
-    background-color: white;
-    height: 38px;
-    width: auto;
-    padding-left: 11px;
-    padding-right: 11px;
+.lanbtn {
+  border: solid;
+  color: #6ba329;
+  border-width: 1px;
+  border-color: #6ba329;
+  border-radius: 4px;
+  background-color: white;
+  height: 38px;
+  width: auto;
+  padding-left: 11px;
+  padding-right: 11px;
 }
-.hamburger{
-    border: solid;
-    color: #707070;
-    border-width: 1px;
-    border-color: #707070;
-    border-radius: 4px;
-    background-color: white;
-    height: 38px;
-    width: 42px;
-    -webkit-box-shadow: 0 0 0 0 !important;
-    box-shadow: 0 0 0 0 !important;
+.hamburger {
+  border: solid;
+  color: #707070;
+  border-width: 1px;
+  border-color: #707070;
+  border-radius: 4px;
+  background-color: white;
+  height: 38px;
+  width: 42px;
+  -webkit-box-shadow: 0 0 0 0 !important;
+  box-shadow: 0 0 0 0 !important;
 }
 @media screen and (max-width: 768px) {
   .nav-display.show {
@@ -138,17 +138,17 @@ export default {
     width: 100%;
   }
 }
-.footer-logo{
+.footer-logo {
   margin: 0px 20px 0px 0px;
   width: 70px;
   height: 70px;
 }
 
-.topsearch{
+.topsearch {
   border: solid;
-  color: #6BA329;
+  color: #6ba329;
   border-width: 1px;
-  border-color: #6BA329;
+  border-color: #6ba329;
   border-radius: 4px;
   background-color: white;
   height: 38px;
@@ -163,17 +163,16 @@ export default {
   width: 100%;
   padding: 0px 0px 0px 0px !important;
   margin: 0px 0px 0px 0px !important;
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   z-index: 999;
   position: fixed;
   -webkit-box-shadow: 0px 2px 10px -1px #999;
   -moz-box-shadow: 0px 2px 10px -1px #999;
   box-shadow: 0px 2px 10px -1px #999;
-
 }
 
 .header-top-line {
-  background-color: #E3B800;
+  background-color: #e3b800;
   width: 100%;
   height: 5px;
 }
@@ -190,56 +189,55 @@ export default {
 }
 
 .webname-txt {
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   font-size: 24px;
-  color: #5D5D5D;
+  color: #5d5d5d;
   padding-bottom: 0px !important;
   margin-bottom: 0px !important;
   font-weight: bold;
   margin-left: 20px;
 }
-.header-div-padding{
-    padding: 13px 0px 13px 0px;
+.header-div-padding {
+  padding: 13px 0px 13px 0px;
 }
 
 button.navbar-toggler {
-    height: 38px !important;
-    border-color: rgb(160, 160, 160) !important;
+  height: 38px !important;
+  border-color: rgb(160, 160, 160) !important;
 }
-@media (max-width: 425px){
-
-    .header-div-padding{
-        padding: 0px 0px 0px 0px;
-    }
-}
-
-@media (max-width: 768px){
-    .golfsearch{
-        display: none !important;
-    }
-    .nav-display{
-        display: none;
-    }
-    .nav-mb-display{
-        display: inherit !important;
-    }
+@media (max-width: 425px) {
+  .header-div-padding {
+    padding: 0px 0px 0px 0px;
+  }
 }
 
-@media (min-width: 769px){
-    .nav-mb-display{
-        display: none !important;
-    }
+@media (max-width: 768px) {
+  .golfsearch {
+    display: none !important;
+  }
+  .nav-display {
+    display: none;
+  }
+  .nav-mb-display {
+    display: inherit !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-mb-display {
+    display: none !important;
+  }
 }
 
 .main-body {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   width: 100%;
   padding: 0px 0px 0px 0px !important;
   margin: 0px 0px 0px 0px !important;
 }
 
 .navbar-div {
-  background-color: #EFEFEF;
+  background-color: #efefef;
   width: 100% !important;
   margin: 0px 0px 0px 0px !important;
   padding: 0px 0px 0px 0px !important;
@@ -259,7 +257,6 @@ ul {
   margin-bottom: 0px !important;
   padding-bottom: 0px !important;
   padding-left: 0px !important;
-
 }
 
 #navbar-nav li {
@@ -276,7 +273,7 @@ ul {
   display: block;
   padding: 3px;
   text-decoration: none;
-  color: #5D5D5D;
+  color: #5d5d5d;
   height: 38px;
   line-height: 31px;
   transition-duration: 0.3s;
@@ -284,7 +281,7 @@ ul {
 
 #navbar-nav a:hover {
   font-weight: bold;
-  background-color: #E3B800;
+  background-color: #e3b800;
   color: white;
   height: 38px;
 }
@@ -297,25 +294,24 @@ ul {
   background-size: cover;
 }
 
-
 .main-div {
   z-index: -1;
   width: 100%;
   margin: 0px 0px 0px 0px !important;
 }
-@media (max-width: 768px){
-  .main-div-padding-fix{
+@media (max-width: 768px) {
+  .main-div-padding-fix {
     padding: 90px 0px 0px 0px !important;
   }
 }
-@media (max-width: 425px){
-  .main-div-padding-fix{
+@media (max-width: 425px) {
+  .main-div-padding-fix {
     padding: 70px 0px 0px 0px !important;
   }
 }
 
-@media (min-width: 769px){
-    .main-div-padding-fix{
+@media (min-width: 769px) {
+  .main-div-padding-fix {
     padding: 123px 0px 0px 0px !important;
   }
 }
@@ -324,7 +320,6 @@ ul {
   margin-top: 30px !important;
   height: 200px;
   width: 100%;
-
 }
 
 .page-title-padding-fix {
@@ -343,14 +338,14 @@ ul {
 
 .page-title-yellbold {
   font-size: 40px;
-  color: #E3B800;
+  color: #e3b800;
   font-weight: 400;
   z-index: 3;
 }
 
 .page-subtitle {
   font-size: 32px;
-  color: #5D5D5D;
+  color: #5d5d5d;
   font-weight: 100;
   z-index: 3;
 }
@@ -367,7 +362,6 @@ ul {
 .quicklink-div {
   margin: 0px 0px 0px 0px !important;
   padding: 10px 10px 10px 10px !important;
-
 }
 
 .ql-div {
@@ -378,7 +372,6 @@ ul {
   align-items: center;
   width: 100%;
   padding: 10px 10px 10px 10px !important;
-
 }
 .survey-home-bg {
   z-index: -1;
@@ -395,12 +388,12 @@ ul {
 }
 
 .survey-btn {
-  color: #5D5D5D;
+  color: #5d5d5d;
   font-size: 19px;
   height: 50px;
   width: 200px !important;
   background-color: transparent;
-  border: 2px solid #5D5D5D;
+  border: 2px solid #5d5d5d;
   border-radius: 1000px;
   transition-duration: 0.3s;
   margin: 10px 0px 10px 0px;
@@ -408,15 +401,15 @@ ul {
 
 .survey-btn:hover {
   color: white;
-  background-color: #5D5D5D;
-  border: 2px solid #5D5D5D;
+  background-color: #5d5d5d;
+  border: 2px solid #5d5d5d;
   border-radius: 1000px;
   margin: 10px 0px 10px 0px;
 }
 
 .survey-title {
   font-size: 40px;
-  color: #E3B800;
+  color: #e3b800;
   font-weight: 100;
   z-index: 3;
   margin: 10px 0px 10px 0px;
@@ -425,21 +418,21 @@ ul {
 
 .survey-subtitle {
   font-size: 32px;
-  color: #5D5D5D;
+  color: #5d5d5d;
   font-weight: 100;
   z-index: 3;
   margin: 10px 0px 10px 0px;
   text-align: center;
 }
 
-@media (max-width: 425px) {
+@media screen and (max-width: 425px) {
   .survey-subtitle {
-    font-size: 18px;
+    font-size: 25px;
     text-align: center;
   }
 
   .survey-title {
-    font-size: 28px;
+    font-size: 35px;
     text-align: center;
   }
 }
@@ -475,7 +468,7 @@ ul {
   .left-hr {
     border: solid;
     border-width: 0px 0px 0px 1px;
-    border-color: #CCCACA;
+    border-color: #cccaca;
   }
 
   .quicklink-fix {
@@ -497,7 +490,7 @@ ul {
   .left-hr {
     border: solid;
     border-width: 1px 0px 0px 0px;
-    border-color: #CCCACA;
+    border-color: #cccaca;
   }
 
   .quicklink-fix {
@@ -513,7 +506,7 @@ ul {
 .top-hr {
   border: solid;
   border-width: 1px 0px 0px 0px;
-  border-color: #CCCACA;
+  border-color: #cccaca;
 }
 
 a {
@@ -527,7 +520,7 @@ a:hover {
 
 .mailphone-txt {
   text-align: center;
-  color: #5D5D5D !important;
+  color: #5d5d5d !important;
   font-size: 14px !important;
   padding: 0px 0px 0px 10px !important;
   margin: 0px 0px 0px 0px !important;
@@ -545,7 +538,7 @@ a:hover {
 
 .emailbtn {
   width: 100%;
-  background-color: #29A645 !important;
+  background-color: #29a645 !important;
   color: white !important;
 }
 
@@ -556,10 +549,10 @@ body {
 * {
   box-sizing: border-box;
 }
-form.example input[type=text] {
+form.example input[type="text"] {
   padding: 10px;
   font-size: 17px;
-  border: 1px solid #CBCBCB;
+  border: 1px solid #cbcbcb;
   border-radius: 4px 0px 0px 4px;
   float: left;
   width: 80%;
@@ -570,10 +563,10 @@ form.example button {
   float: left;
   width: 20%;
   padding: 10px;
-  background: #2196F3;
+  background: #2196f3;
   color: white;
   font-size: 17px;
-  border: 1px solid #2196F3;
+  border: 1px solid #2196f3;
   border-left: none;
   border-radius: 0px 4px 4px 0px;
   cursor: pointer;
