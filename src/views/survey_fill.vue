@@ -177,7 +177,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="mg col-2">
+                  <div class="mg col-lg-2">
                     <p style=" margin-top: 0px !important; margin-bottom:0px;">วันที่ทำแบบสอบถาม</p>
                     <input
                       type="date"
