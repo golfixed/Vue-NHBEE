@@ -143,7 +143,7 @@
             <div class="row flex-column survey-div d-flex align-items-center">
               <h3 class="survey-subtitle">{{ $t("message.survey.title") }}</h3>
               <h3 class="survey-title">{{ $t("message.survey.title_bold") }}</h3>
-              <button class="survey-btn" type="submit">{{ $t("message.survey.btn") }}</button>
+              <a href="#/survey"><button class="survey-btn" type="button">{{ $t("message.survey.btn") }}</button></a>
             </div>
           </div>
         </div>
