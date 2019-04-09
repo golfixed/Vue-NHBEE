@@ -416,8 +416,359 @@
               >
                 <p
                   class="topic-2"
-                  style=" margin: 10px 0px 20px 0px !important;"
+                  style=" margin: 10px 0px 10px 0px !important;"
                 >ส่วนที่ 2 ข้อมูลเกี่ยวกับการเลี้ยงผึ้งโพรง/ชันโรง</p>
+
+                <div class="row">
+                  <div class="mg col-lg-12">
+                    <p
+                      style=" margin-top: 0px !important; margin-bottom:0px;"
+                    >1. ประสบการณ์การเลี้ยงผึ้ง และ/หรือชันโรง จำนวนกี่ปี/เริ่มตั้งเเต่ปี พ.ศ./ประวัติในอดีตตั้งแต่เริ่มต้นจนถึงปัจจุบัน</p>
+                    <input
+                      type="text"
+                      style="border-radius: 5px; border: 1px solid #bebfc1; width:100%;"
+                    >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mg col-lg-12">
+                    <p
+                      style=" margin-top: 0px !important; margin-bottom:0px;"
+                    >2. จำนวนรังผึ้ง และ/หรือชันโรง ที่เลี้ยงปัจจุบัน (รัง)</p>
+                    <input
+                      type="text"
+                      style="border-radius: 5px; border: 1px solid #bebfc1; width:100%;"
+                    >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mg col-lg-12">
+                    <p
+                      style=" margin-top: 0px !important; margin-bottom:0px;"
+                    >3. ท่านมีเเรงงานในครอบครัวที่เลี้ยงผึ้ง และ/หรือชันโรง มีจำนวนทั้งหมด (คน)</p>
+                    <input
+                      type="text"
+                      style="border-radius: 5px; border: 1px solid #bebfc1; width:100%;"
+                    >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mg col-lg-12">
+                    <p
+                      style=" margin-top: 0px !important; margin-bottom:0px;"
+                    >4. จำนวนเเรงงานจ้างในการเลี้ยงผึ้ง และ/หรือชันโรง (คน)</p>
+                    <input
+                      type="text"
+                      style="border-radius: 5px; border: 1px solid #bebfc1; width:100%;"
+                    >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mg col-lg-12">
+                    <p
+                      style=" margin-top: 0px !important; margin-bottom:0px;"
+                    >5. พื้นที่เลี้ยงผึ้ง และ/หรือชันโรง (ไร่)</p>
+                    <input
+                      type="text"
+                      style="border-radius: 5px; border: 1px solid #bebfc1; width:100%;"
+                    >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mg col-lg-12">
+                    <p
+                      style=" margin-top: 0px !important; margin-bottom:0px;"
+                    >6. ชนิดของพืชอาหารในพื้นที่เลี้ยงผึ้งและ/หรือชันโรง /มีจำนวนกี่ไร่ มีทั้งหมดกี่ชนิด อะไรบ้าง (เช่น ยางพารา ปาล์มน้ำมัน ทุเรียน เงาะ มังคุด /พืชอื่นๆ)</p>
+                    <input
+                      type="text"
+                      style="border-radius: 5px; border: 1px solid #bebfc1; width:100%;"
+                    >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mg col-lg-12">
+                    <p
+                      style=" margin-top: 0px !important; margin-bottom:0px;"
+                    >7. มีการย้ายรังผึ้งและ/หรือชันโรง กี่ครั้งต่อปี (ครั้งที่ย้ายรังมีพืชอาหาร /สถานที่ /ช่วงเดือน /ได้ผลผลิตน้ำผึ้ง ไขผึ้ง เกสร อื่นๆ (กก.)</p>
+                    <input
+                      type="text"
+                      style="border-radius: 5px; border: 1px solid #bebfc1; width:100%;"
+                    >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mg col-lg-12">
+                    <p
+                      style=" margin-top: 0px !important; margin-bottom:0px;"
+                    >8. ผึ้งและ/หรือชันโรง ที่ท่านเลี้ยงได้มาจากที่ไหน</p>
+                    <input
+                      type="radio"
+                      name="where"
+                      value="yes"
+                      style="border-radius: 5px; border: 1px solid #bebfc1;margin: 0px 30px 0px 20px;"
+                    > ซื้อพันธุ์ผึ้งมาเลี้ยง
+                    <input
+                      type="radio"
+                      name="where"
+                      value="no"
+                      style="border-radius: 5px; border: 1px solid #bebfc1;margin: 0px 30px 0px 20px;"
+                    > เข้ามาอยู่เองตามธรรมชาติ
+                    <input
+                      type="radio"
+                      name="where"
+                      value="yes"
+                      style="border-radius: 5px; border: 1px solid #bebfc1;margin: 0px 30px 0px 20px;"
+                    > ใช้วิธีการล่อผึ้งจากธรรมชาติ
+                    <input
+                      type="radio"
+                      name="where"
+                      value="no"
+                      style="border-radius: 5px; border: 1px solid #bebfc1;margin: 0px 30px 0px 20px;"
+                    > อื่นๆ
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mg col-lg-12">
+                    <p
+                      style=" margin-top: 0px !important; margin-bottom:0px;"
+                    >9. มีการนำผึ้งและ/หรือชันโรงมาใช้ในการผสมเกสรหรือไม่ (ถ้ามี ได้แก่พืชชนิดไหน /ถ้าไม่มี มีความสนใจจะใช้หรือไม่)</p>
+                    <input
+                      type="text"
+                      style="border-radius: 5px; border: 1px solid #bebfc1; width:100%;"
+                    >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mg col-lg-12">
+                    <p
+                      style=" margin-top: 0px !important; margin-bottom:0px;"
+                    >10. ฟาร์มของท่านมีปัญหาเกี่ยวกับการทิ้งรังของผึ้งโพรงและ/หรือชันโรง หรือไม่ (ถ้ามี ฤดูกาลไหน/จากจำนวนรังเดิม/จำนวนรังที่ทิ้ง/ปี พ.ศ.ใด หรือถ้าไม่มีการทิ้งรัง ไม่มีเพราะเหตุใด)</p>
+                    <input
+                      type="text"
+                      style="border-radius: 5px; border: 1px solid #bebfc1; width:100%;"
+                    >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mg col-lg-12">
+                    <p
+                      style=" margin-top: 0px !important; margin-bottom:0px;"
+                    >11. สาเหตุของการทิ้งรังของผึ้งและ/หรือชันโรง ในฟาร์มของท่านคือ (ตอบได้มากกว่า 1 ข้อ)</p>
+                    <input
+                      type="checkbox"
+                      name="where_c"
+                      value="yes"
+                      style="border-radius: 5px; border: 1px solid #bebfc1;margin: 0px 30px 0px 20px;"
+                    > ซื้อพันธุ์ผึ้งมาเลี้ยง
+                    <input
+                      type="checkbox"
+                      name="where_c"
+                      value="no"
+                      style="border-radius: 5px; border: 1px solid #bebfc1;margin: 0px 30px 0px 20px;"
+                    > มีโรคและศัตรูเข้ามาทำลายรัง
+                    <input
+                      type="checkbox"
+                      name="where_c"
+                      value="yes"
+                      style="border-radius: 5px; border: 1px solid #bebfc1;margin: 0px 30px 0px 20px;"
+                    > ทิ้งรังตามฤดูกาล
+                    <input
+                      type="checkbox"
+                      name="where_C"
+                      value="no"
+                      style="border-radius: 5px; border: 1px solid #bebfc1;margin: 0px 30px 0px 20px;"
+                    > อื่นๆ
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mg col-lg-12">
+                    <p
+                      style=" margin-top: 0px !important; margin-bottom:0px;"
+                    >12. ท่านแก้ไขปัญหาการทิ้งรังของผึ้งและ/หรือชันโรง หรือไม่ (แก้ไข โดย.../ไม่มีการแก้ไข โดย...)</p>
+                    <input
+                      type="text"
+                      style="border-radius: 5px; border: 1px solid #bebfc1; width:100%;"
+                    >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mg col-lg-12">
+                    <p
+                      style=" margin-top: 0px !important; margin-bottom:0px;"
+                    >13. ปัญหาการทิ้งรังของผึ้งและ/หรือชันโรง มีผลต่อต้นทุน-รายได้หรือไม่ (มี เนื่องจาก.../ ไม่มี เนื่องจาก...)</p>
+                    <input
+                      type="text"
+                      style="border-radius: 5px; border: 1px solid #bebfc1; width:100%;"
+                    >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mg col-lg-12">
+                    <p
+                      style=" margin-top: 0px !important; margin-bottom:0px;"
+                    >14. ท่านมีการจัดการรังจากการทิ้งรังของผึ้งและ/หรือชันโรง หรือไม่ (เลือกได้มากกว่า 1 ข้อ)</p>
+                    <input
+                      type="checkbox"
+                      name="where_c"
+                      value="yes"
+                      style="border-radius: 5px; border: 1px solid #bebfc1;margin: 0px 30px 0px 20px;"
+                    > มี โดยขายรังเปล่า
+                    <input
+                      type="checkbox"
+                      name="where_c"
+                      value="no"
+                      style="border-radius: 5px; border: 1px solid #bebfc1;margin: 0px 30px 0px 20px;"
+                    > มี โดยนำมาแยกไขผึ้งแล้วขายต่อ
+                    <input
+                      type="checkbox"
+                      name="where_c"
+                      value="yes"
+                      style="border-radius: 5px; border: 1px solid #bebfc1;margin: 0px 30px 0px 20px;"
+                    > มี นำไปใช้หมุนเวียนในฟาร์ม
+                    <input
+                      type="checkbox"
+                      name="where_C"
+                      value="no"
+                      style="border-radius: 5px; border: 1px solid #bebfc1;margin: 0px 30px 0px 20px;"
+                    > อื่นๆ
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mg col-lg-12">
+                    <p
+                      style=" margin-top: 0px !important; margin-bottom:0px;"
+                    >15. ต้นทุนการเลี้ยงผึ้งและ/หรือชันโรง กี่บาทต่อรัง (เช่น ค่ากล่องเลี้ยงผึ้ง ไม้ ตะปู หมวกกันผึ้ง คอนผึ้ง เเรงงาน น้ำตาล ฯลฯ</p>
+                    <input
+                      type="text"
+                      style="border-radius: 5px; border: 1px solid #bebfc1; width:100%;"
+                    >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mg col-lg-12">
+                    <p
+                      style=" margin-top: 0px !important; margin-bottom:0px;"
+                    >16. ราคาขายผลผลิตของผึ้งและ/หรือชันโรง แต่ละชนิดได้ปริมาณกี่ กก./รังๆละกี่บาท (เช่น น้ำผึ้ง ไขผึ้ง เกสรผึ้ง พันธุ์ผึ้ง ฯลฯ )</p>
+                    <input
+                      type="text"
+                      style="border-radius: 5px; border: 1px solid #bebfc1; width:100%;"
+                    >
+                  </div>
+                </div>
+                                <div class="row">
+                  <div class="mg col-lg-12">
+                    <p
+                      style=" margin-top: 0px !important; margin-bottom:0px;"
+                    >17. วิธีการเก็บผลผลิตน้ำผึ้ง ใช้วิธีการใด</p>
+                    <input
+                      type="checkbox"
+                      name="where_c"
+                      value="yes"
+                      style="border-radius: 5px; border: 1px solid #bebfc1;margin: 0px 30px 0px 20px;"
+                    > เครื่องสลัดน้ำผึ้ง
+                    <input
+                      type="checkbox"
+                      name="where_c"
+                      value="no"
+                      style="border-radius: 5px; border: 1px solid #bebfc1;margin: 0px 30px 0px 20px;"
+                    > กรีดจากรัง
+                    <input
+                      type="checkbox"
+                      name="where_c"
+                      value="yes"
+                      style="border-radius: 5px; border: 1px solid #bebfc1;margin: 0px 30px 0px 20px;"
+                    > ใช้ผ้าขาวบางและบีบคั้นทั้งรัง
+                    <input
+                      type="checkbox"
+                      name="where_C"
+                      value="no"
+                      style="border-radius: 5px; border: 1px solid #bebfc1;margin: 0px 30px 0px 20px;"
+                    > อื่นๆ
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mg col-lg-12">
+                    <p
+                      style=" margin-top: 0px !important; margin-bottom:0px;"
+                    >18. ผึ้งและ/หรือชันโรง ช่วยเพิ่มผลผลิตให้ท่านหรือไม่ (ชนิดของพืช/ผลผลิตที่ได้ต่อ กก.ต่อปี พ.ศ)</p>
+                    <input
+                      type="text"
+                      style="border-radius: 5px; border: 1px solid #bebfc1; width:100%;"
+                    >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mg col-lg-12">
+                    <p
+                      style=" margin-top: 0px !important; margin-bottom:0px;"
+                    >19. ท่านมีเทคนิคหรือวิธีการเพิ่มผลผลิตน้ำผึ้งหรือไม่ (มี อย่างไร... /ไม่มี เนื่องจาก...)</p>
+                    <input
+                      type="text"
+                      style="border-radius: 5px; border: 1px solid #bebfc1; width:100%;"
+                    >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mg col-lg-12">
+                    <p
+                      style=" margin-top: 0px !important; margin-bottom:0px;"
+                    >20. ท่านสามารถเก็บผลผลิตน้ำผึ้ง/ชันโรงได้ปีละกี่ครั้ง ช่วงไหนบ้าง</p>
+                    <input
+                      type="text"
+                      style="border-radius: 5px; border: 1px solid #bebfc1; width:100%;"
+                    >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mg col-lg-12">
+                    <p
+                      style=" margin-top: 0px !important; margin-bottom:0px;"
+                    >21. ท่านสนใจให้สวนหรือฟาร์มของท่านเป็นจุดเรียนรู้หรือไม่ เพราะเหตุใด</p>
+                    <input
+                      type="text"
+                      style="border-radius: 5px; border: 1px solid #bebfc1; width:100%;"
+                    >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mg col-lg-12">
+                    <p
+                      style=" margin-top: 0px !important; margin-bottom:0px;"
+                    >22. ท่านมีความสนใจเรียนรู้เพิ่มเติมหรือเข้าคอร์สอบรมเกี่ยวกับการทำผลิตภัณฑ์สบู่ แชมพู แปรรูปผลผลิต ฯลฯ หรืออบรมนักการตลาดท้องถิ่น หรือไม่ เพราะเหตุใด</p>
+                    <input
+                      type="text"
+                      style="border-radius: 5px; border: 1px solid #bebfc1; width:100%;"
+                    >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mg col-lg-12">
+                    <p
+                      style=" margin-top: 0px !important; margin-bottom:0px;"
+                    >23. ท่านมีความสนใจจะทดลองใช้รังผึ้งอัจฉริยะ (Smart hive) หรือไม่ เพราะเหตุใด</p>
+                    <input
+                      type="text"
+                      style="border-radius: 5px; border: 1px solid #bebfc1; width:100%;"
+                    >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mg col-lg-12">
+                    <p
+                      style=" margin-top: 0px !important; margin-bottom:0px;"
+                    >ข้อเสนอแนะ/อื่นๆ</p>
+                    <input
+                      type="text"
+                      style="border-radius: 5px; border: 1px solid #bebfc1; width:100%;"
+                    >
+                  </div>
+                </div>
+
+
+
+
+
+
               </div>
 
               <div class="d-flex justify-content-center" style="padding-top: 30px; width: 100%;">
