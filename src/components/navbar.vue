@@ -24,11 +24,6 @@
               <button class="lanbtn d-flex flex-rol align-items-center" @click="switchLocal()" style="margin-right: 8px;"><mdb-icon icon="globe" style=" font-size: 20px;margin-right: 5px;"/>{{ displayLocal }}</button>
               <button class="hamburger d-flex align-items-center justify-content-center" v-on:click="toggle()" type="button"><mdb-icon icon="bars" /></button>
             </form>
-            <!-- <nav class="">
-              <div>
-                
-              </div>
-            </nav> -->
           </div>
         </div>
       </div>
@@ -45,11 +40,11 @@
               <li>
                 <router-link to="/news">{{ $t("message.navbar.col3") }}</router-link>
               </li>
-              <!-- <li>
-                <router-link to="/survey">{{ $t("message.navbar.col4") }}</router-link>
-              </li> -->
               <li>
                 <router-link to="/research">{{ $t("message.navbar.col5") }}</router-link>
+              </li>
+              <li>
+                <router-link to="/survey">{{ $t("message.navbar.col4") }}</router-link>
               </li>
               <li>
                 <router-link to="/contact">{{ $t("message.navbar.col6") }}</router-link>

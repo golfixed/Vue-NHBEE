@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import home from '@/views/home'
 import aboutus from '@/views/aboutus'
+import survey from '@/views/survey'
+import survey_f1 from '@/views/survey_fill'
 import contact from '@/views/contact'
 import login from '@/views/login'
 import upcoming from '@/views/upcoming'
@@ -52,6 +54,16 @@ export default new Router({
       path: '/news/article',
       name: 'Article',
       component: news_article
+    },
+    {
+      path: '/survey',
+      name: 'Survey',
+      component: survey
+    },
+    {
+      path: '/form',
+      name: 'Survey_f1',
+      component: survey_f1
     }
   ],
   scrollBehavior (to, from, savedPosition) {

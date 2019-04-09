@@ -11,6 +11,7 @@ Vue.config.productionTip = false
 
 Vue.use(VueCarousel)
 Vue.use(VueI18n)
+
 const i18n = new VueI18n({
   locale: 'en', // set locale
   messages // set locale messages
